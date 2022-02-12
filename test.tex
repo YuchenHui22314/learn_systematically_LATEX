@@ -1,0 +1,114 @@
+
+%                ---- general notes    
+%    p19 latex生成的文件类型介绍
+%    p21 compile commands    
+%       latex --> dvi + dvipdfmx ----> pdf    
+%       pdflatex --> pdf    
+%       xelatex  chinese
+%    
+%    
+%%%%%%%%%%%%%%%%% article type %%%%%%%%%%%%%%%%
+\documentclass[11pt,oneside,a4paper]{article}  
+
+
+%%%%%%%%%%导言区%%%%%%%%%%%%
+%%%%%mettre des "usepackage"
+
+% 1. texdoc <pkg-name> 在终端中查看包的信息  
+%    
+% 2. (p20)\includeonly{<filename>} for limiting files allowed
+% to be included in the file.    
+%    
+% 3. (p20)\syntaxonly omit .dvi .pdf, just find out erros.
+%    helps accelerate compile speed    
+%    
+\usepackage{tabularx, makecell, multirow }
+\usepackage{syntonly}
+% \usepackage{ctex}
+%%%%%%%%%%导言区%%%%%%%%%%%%
+%    
+%    
+%---- environement:
+%    \begin{<env name>}[optional]{mandatory}
+%    \end{<env name>}    
+%    
+%---- group \command{}
+%    
+%    
+%    
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Latex characters  %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%   1. many space --------> one space    
+%   2. many white line -----> one white line
+%   3. \par also split paragraph   
+%   4. \\ =====> \n
+
+Several spaces    equal one.
+      Front spaces are ignored.
+
+An empty line starts a new paragraph. \par
+A \verb|\par| command does the same.
+stefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnier \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          special chars            %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%    #$%&{}_^~\
+%%    we should use \# \& .... \^{} \~{} \textbackslash
+\# \& .... \^{} \~{} \textbackslash \\
+
+%% %%%%%%%%%%%%% how to avoid ligatures %%%%%%%%%%%%%
+%%      {}
+difficult \ldots \\
+dif{}f{}icult \ldots \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          punctuation              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%      1. ``''  `'
+`` Marc Feeley says `Oh Stefan je le connais...' ''\\
+
+%%      2. - & -- & ---   
+%%      -:composite words; 
+%%      --: number range; 
+%%      ---: po zhe hao
+daughter-in-law\\        
+pages 13--67 \\
+yes---or no?
+
+%%      3. \ldots == dots
+one, two, three, \dots one hundred.\\
+one, two, three, \ldots one hundred.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          francais~~~              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      p14, p15 img
+\'el\`eve na\"i ve !` ?` \o \oe \AE \t{oo} \textregistered \texttrademark\\
+
+``Hello Wood'' \LaTeX \ \ \ \ \ son of me. \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% duan hang duan ye %%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%      1. tie ~~~~~~~~~~~~~~~ (fobid fenhang)
+Fig.~2a \par
+Donald ~E. Knuth \par
+%%      2. new line in the same paragraph: 
+%%         \\[<length>]  
+%%         \\*          (forbid fenye)  
+%%         \newline
+%%      3. \newpage \clearpage
+%%          双栏模式中 newpage 可以另起一栏，clearpage则是另起一页。
+%%      4. \(no)linebreak[<n>] ,\(no)pagebreak[<n>] n E [0,4] 
+%%      5. break word \-
+% \input{included.tex}
+%                   %%%%% include%%%
+% \include{included.tex}
+\end{document}
