@@ -24,8 +24,21 @@
 %    
 \usepackage{tabularx, makecell, multirow }
 \usepackage{syntonly}
+%hpyerlien
+\usepackage{hyperref}
+%utf8
+\usepackage[utf8]{inputenc}
+%to solve footnote too high 
+%(this helps fix footnote to bottom of the page)
+\usepackage[bottom]{footmisc}
+%array: aimed at tabular
+\usepackage{array}
+% sanxianbiao
+\usepackage{booktabs}
+% graphics
+\usepackage{graphicx}
 % \usepackage{ctex}
-%%%%%%%%%%导言区%%%%%%%%%%%%
+%%%%%%%%%%导言区%%%%%%%%%%%%%
 %    
 %    
 %---- environement:
@@ -40,7 +53,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \title{Latex Notes}  
 \date{\today}
-\author{Yuchen Hui}
+\author{Yuchen Hui\thanks{yuchen22314@gmail.com} 
+\and Yuchen Xi\thanks{Corresponding author}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -49,99 +63,207 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%% second step : table of contents %%%%%%%%
-\tableofcontents
+\tableofcontents 
+\listoftables
+\listoffigures
+\newpage
 % Will make an entry for every "section" or sub-entry for subsection
-\section{Yuchen Hui}
-      \paragraph{Yuchen Hui is a stu }
+\part{You mean wwwhat?}
+%% Part. view pdf.
+%------------------------------------------------------
+%-                     Structure                      -
+%------------------------------------------------------
+\section[yuchen Xi]{Yuchen Hui}
+      \begin{abstract}
+            With de developement of Technologie. Xu jinheng 
+            becomes the most powerfull man in the world.
+            Savoir, c'est le pouvoir.
+      \end{abstract}
+      \label{se:sectionYuchen}
+      % how to cut l
+      \paragraph{Yuchen Hui is a stu }~{}
+
+      \begin{verbatim}
+            \section{What}
+                  \begin{center}
+                        What
+                  \end{center}
+      \end{verbatim}
+      \begin{verbatim*}
+            \section{What}
+                  \begin{center}
+                        What
+                  \end{center}
+      \end{verbatim*}
+      \begin{enumerate}
+            \item first
+            \begin{itemize}
+                  \item what the hell.
+                  \item Yuchenchen.
+                  \item[-] this is an item
+                  \item[*] 
+                  \begin{description}
+                        \item[Lambda] lambda is a grec char. 
+                        \item[Lambda] lambda is a grec char. 
+                        \item[Lambda] lambda is a grec char. 
+                  \end{description}
+            \end{itemize}
+      \end{enumerate}
       
+      \begin{flushleft}
+           I'm at left~~~~~~~~~~~~~~~~ 
+      \end{flushleft}
+      \begin{flushright}
+           I'm at right \~{}\~{}\~{}\~{}\~{}\~{}\~{}
+      \end{flushright}
+      \begin{center}
+           I'm at center \~{}\~{}\~{}\~{}\~{}\~{}\~{}
+      \end{center}
+      I'm tool man before quote demo. Ahhhhhhhhhhhhh
+      I'm tool man before quote demo. Ahhhhhhhhhhhhh
+      I'm tool man before quote demo. Ahhhhhhhhhhhhh
+      I'm tool man before quote demo. Ahhhhhhhhhhhhh
+      I'm tool man before quote demo. Ahhhhhhhhhhhhh
+      \begin{quotation}
+            hand hans lord lords.ldsjflksdjlfkjslkdj
+            jlsdkfjlskdjflskdjlfjdslkfjsldkfjlsdkjfl
+            lskdjflskjdflsjdlfksldkfjlsdkjflskjdflsk
+            jlskdjflskdjflskjdflskjdlfskjdflksjdlfks
+      \end{quotation}
+
+      \begin{quote}
+            hand hans lord lords.ldsjflksdjlfkjslkdj
+            jlsdkfjlskdjflskdjlfjdslkfjsldkfjlsdkjfl
+            lskdjflskjdflsjdlfksldkfjlsdkjflskjdflsk
+            jlskdjflskdjflskjdflskjdlfskjdflksjdlfks
+      \end{quote}
+      I'm tool man After quote demo. Ahhhhhhhhhhhhh
+      I'm tool man After quote demo. Ahhhhhhhhhhhhh
+      I'm tool man After quote demo. Ahhhhhhhhhhhhh
       Yuchen Hui is a student 
 
-      Yuchen Hui is 20 years old.
+      Yuchen Hui is 20 years old.\\
+      \begin{figure}[h]
+            \centering
+            \includegraphics[scale=0.2]{linuxDirotp0.png}
+            \caption{Linux DIRO Clion}
+            \label{fig:linuxDIRO}
+      \end{figure}
+      
+      \vspace{1.1em}
+      \begin{tabular}[]{@{!`!`!`!`!`!`} c @{!!!!!}}
+            \hline
+            special leading space\footnotemark\\
+            \hline
+      \end{tabular}
+      \footnotetext{Success this time I think.}
+      \newline
+
+      %%%%%% white line before vspace is necessary%%%%
+      \vspace{1em}
+      \begin{center}
+            
+            \begin{tabular}[]{|p{7cm}|}
+            %% hline for upperline
+            \hline  
+            Nineteen Eighty-Four (also stylised as 1984) is a dystopian social science fiction novel and cautionary tale written by English writer George Orwell. It was published on 8 June 1949 by Secker \& Warburg as Orwell's ninth and final book completed in his lifetime. Thematically, it centres on the consequences of totalitarianism, mass surveillance and repressive regimentation of people and behaviours within societyOrwell, a democratic socialist, modelled the totalitarian government in the novel after Stalinist Russia and Nazi Germany. More broadly, the novel examines the role of truth and facts within politics and the ways in which they are manipulated. \\
+            \hline
+            \end{tabular}
+      \end{center}
+
+      \marginpar[]{\footnotesize margin is narrow, do not write too much.}
+
       \subsection{Yuchen}
             \subsubsection{Hui}
+                  \label{ssse:Hui}
 
+\part{I mean...}
 \section{Text}
+      \paragraph{\underline{Here is a reference to section~\ref{ssse:Hui}}}~{}\\  
+            paragraph contents \\
+      \emph{Here is a reference to page~\pageref{se:sectionYuchen}}\\
+      Here is a test for footnote\footnote{This is a footnote. Click to come back}.\\
+      Here is another test for footnote\footnote{This is a second footnote.}.
       \subsection{Latex Characters}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% Latex characters  %%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%% Latex characters  %%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            %   1. many space --------> one space    
+            %   2. many white line -----> one white line
+            %   3. \par also split paragraph   
+            %   4. \\ =====> \n
+
+            \indent Several spaces    equal one.
+                  Front spaces are ignored.
+
+            An empty line starts a new paragraph. \par
+            A \verb|\par| command does the same.
+            stefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnier \\
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%          special chars            %%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%    #$%&{}_^~\
+            %%    we should use \# \& .... \^{} \~{} \textbackslash
+            \# \& .... \^{} \~{} \textbackslash \\
+
+            %% %%%%%%%%%%%%% how to avoid ligatures %%%%%%%%%%%%%
+            %%      {}
+            difficult \ldots \\
+            dif{}f{}icult \ldots \\
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%          punctuation              %%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            %%      1. ``''  `'
+            `` Marc Feeley says `Oh Stefan je le connais...' ''\\
+
+            %%      2. - & -- & ---   
+            %%      -:composite words; 
+            %%      --: number range; 
+            %%      ---: po zhe hao
+            daughter-in-law\\        
+            pages 13--67 \\
+            yes---or no?
+
+            %%      3. \ldots == dots
+            one, two, three, \dots one hundred.\\
+            one, two, three, \ldots one hundred.
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%          francais~~~              %%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%      p14, p15 img
+            \'el\`eve na\"i ve !` ?` \o \oe \AE \t{oo} \textregistered \texttrademark\\
+
+            ``Hello Wood'' \LaTeX \ \ \ \ \ son of me. \\
+
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+            %%%%%%%%%%line breaking and page breaking    %%%%%%%%%%%%%
+            %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+            %%      1. tie ~~~~~~~~~~~~~~~ (fobid fenhang)
+            Fig.~2a \par
+            Donald ~E. Knuth \par
+            %%      2. new line in the same paragraph: 
+            %%         \\[<length>]  
+            %%         \\*          (forbid fenye)  
+            %%         \newline
+            %%      3. \newpage \clearpage
+            %%          双栏模式中 newpage 可以另起一栏，clearpage则是另起一页。
+            %%      4. \(no)linebreak[<n>] ,\(no)pagebreak[<n>] n E [0,4] 
+            %%      5. break word \-
+            % \input{included.tex}
+            %                   %%%%% include%%%
+            % \include{included.tex}
 \section{Tianchang Liu}
 \section{Conclusion}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% Latex characters  %%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%   1. many space --------> one space    
-%   2. many white line -----> one white line
-%   3. \par also split paragraph   
-%   4. \\ =====> \n
+% appendix changes chapter(section) numbering to letters
+\appendix
+\section{appendix I}
+\section{appendix II}
 
-Several spaces    equal one.
-      Front spaces are ignored.
-
-An empty line starts a new paragraph. \par
-A \verb|\par| command does the same.
-stefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnierstefan monnier \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%          special chars            %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%    #$%&{}_^~\
-%%    we should use \# \& .... \^{} \~{} \textbackslash
-\# \& .... \^{} \~{} \textbackslash \\
-
-%% %%%%%%%%%%%%% how to avoid ligatures %%%%%%%%%%%%%
-%%      {}
-difficult \ldots \\
-dif{}f{}icult \ldots \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%          punctuation              %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%      1. ``''  `'
-`` Marc Feeley says `Oh Stefan je le connais...' ''\\
-
-%%      2. - & -- & ---   
-%%      -:composite words; 
-%%      --: number range; 
-%%      ---: po zhe hao
-daughter-in-law\\        
-pages 13--67 \\
-yes---or no?
-
-%%      3. \ldots == dots
-one, two, three, \dots one hundred.\\
-one, two, three, \ldots one hundred.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%          francais~~~              %%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%      p14, p15 img
-\'el\`eve na\"i ve !` ?` \o \oe \AE \t{oo} \textregistered \texttrademark\\
-
-``Hello Wood'' \LaTeX \ \ \ \ \ son of me. \\
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% duan hang duan ye %%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%%      1. tie ~~~~~~~~~~~~~~~ (fobid fenhang)
-Fig.~2a \par
-Donald ~E. Knuth \par
-%%      2. new line in the same paragraph: 
-%%         \\[<length>]  
-%%         \\*          (forbid fenye)  
-%%         \newline
-%%      3. \newpage \clearpage
-%%          双栏模式中 newpage 可以另起一栏，clearpage则是另起一页。
-%%      4. \(no)linebreak[<n>] ,\(no)pagebreak[<n>] n E [0,4] 
-%%      5. break word \-
-% \input{included.tex}
-%                   %%%%% include%%%
-% \include{included.tex}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%% duan hang duan ye %%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
