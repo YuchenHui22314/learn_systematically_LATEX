@@ -1,16 +1,17 @@
-\contentsline {part}{I\hspace {1em}You mean wwwhat?}{3}{part.1}%
+\contentsline {part}{第一部分\hspace {1em}You mean wwwhat?}{3}{part.1}%
 \contentsline {section}{\numberline {1}yuchen Xi}{3}{section.1}%
-\contentsline {paragraph}{Yuchen Hui is a stu }{3}{section*.4}%
+\contentsline {paragraph}{Yuchen Hui is a stu }{3}{paragraph*.4}%
 \contentsline {subsection}{\numberline {1.1}Yuchen}{5}{subsection.1.1}%
 \contentsline {subsubsection}{\numberline {1.1.1}Hui}{5}{subsubsection.1.1.1}%
-\contentsline {part}{II\hspace {1em}I mean...}{5}{part.2}%
+\contentsline {part}{第二部分\hspace {1em}I mean...}{5}{part.2}%
 \contentsline {section}{\numberline {2}Text}{5}{section.2}%
-\contentsline {paragraph}{\underline {Here is a reference to section\nobreakspace {}\ref {ssse:Hui}}}{5}{section*.5}%
-\contentsline {subsection}{\numberline {2.1}Latex Characters}{5}{subsection.2.1}%
-\contentsline {section}{\numberline {3}MATH}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}subsection of section 3}{7}{subsection.3.1}%
+\contentsline {paragraph}{\underline {Here is a reference to section\nobreakspace {}\ref {ssse:Hui}}}{5}{paragraph*.5}%
+\contentsline {subsection}{\numberline {2.1}Latex Characters}{6}{subsection.2.1}%
+\contentsline {section}{\numberline {3}MATH}{7}{section.3}%
+\contentsline {subsection}{\numberline {3.1}subsection of section 3}{8}{subsection.3.1}%
 \contentsline {section}{\numberline {4}STYLE}{8}{section.4}%
-\contentsline {section}{\numberline {5}\color {green}{COLOR}}{9}{section.5}%
-\contentsline {section}{\numberline {6}Conclusion}{9}{section.6}%
-\contentsline {section}{\numberline {A}appendix I}{9}{appendix.A}%
-\contentsline {section}{\numberline {B}appendix II}{9}{appendix.B}%
+\contentsline {section}{\numberline {5}\color {green}{COLOR}}{10}{section.5}%
+\contentsline {section}{\numberline {6}command}{10}{section.6}%
+\contentsline {section}{\numberline {7}Conclusion}{10}{section.7}%
+\contentsline {section}{\numberline {A}appendix I}{11}{appendix.A}%
+\contentsline {section}{\numberline {B}appendix II}{11}{appendix.B}%
