@@ -27,7 +27,7 @@
 %hpyerlien
 \usepackage{hyperref}
 %utf8
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 %to solve footnote too high 
 %(this helps fix footnote to bottom of the page)
 \usepackage[bottom]{footmisc}
@@ -57,6 +57,8 @@
 \usepackage[]{color}
 \usepackage[]{xcolor}
 
+%%%%%%%%%%%%%%%%%%%%%%%%% new command %%%%%%%%%%%%%%%%%%%
+\newcommand{\ac}[1]{\left\{ #1 \right\}}
 
 % \usepackage{ctex}
 
@@ -423,13 +425,12 @@ The Russian is too strong. Next,
 \framebox[10em][c]{$\sum_{n=1}^{\infty} x^{n}$}\\
 \fcolorbox{blue}{yellow}{\%\textcolor{blue}{skdjflkjsdlf}}
 \textcolor{red}{Are you kidding me.}
-
-
+\section{command}
+你好你好。
+$\ac{dkfljskdflskjlf}$
 \section{Conclusion}
 \begin{center} 
-$lkdsfscf$ 
 \end{center}
-
 % appendix changes chapter(section) numbering to letters
 \appendix
 \section{appendix I}
