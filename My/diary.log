@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.12)  3 MAR 2022 00:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.2.12)  3 MAR 2022 14:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,23 +707,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 79.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\circ' on input line 79.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\sim' on input line 79.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 79.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\circ' on input line 79.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -746,17 +730,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
 
-[3] (./diary.aux)
-Package rerunfilecheck Info: File `diary.out' has not changed.
-(rerunfilecheck)             Checksum: 6415B82C09DD024E68EF995866BEA75A;628.
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 12.64723pt, for example:
+(fancyhdr)                \setlength{\headheight}{12.64723pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-0.64723pt}.
+
+[4] (./diary.aux)
+
+Package rerunfilecheck Warning: File `diary.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `diary.out':
+(rerunfilecheck)             Before: 83459C89B1F8942B0E6B024F2941C937;670
+(rerunfilecheck)             After:  2D44EEE329A1ADFB47E04D72E67AB836;574.
  ) 
 Here is how much of TeX's memory you used:
- 16212 strings out of 476919
- 340470 string characters out of 5825424
- 682187 words of memory out of 5000000
- 35915 multiletter control sequences out of 15000+600000
+ 16223 strings out of 476919
+ 341337 string characters out of 5825424
+ 683229 words of memory out of 5000000
+ 35926 multiletter control sequences out of 15000+600000
  416172 words of font info for 105 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  101i,11n,104p,1245b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on diary.pdf (3 pages).
+Output written on diary.pdf (4 pages).
